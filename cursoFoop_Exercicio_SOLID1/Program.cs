@@ -1,23 +1,22 @@
-﻿using cursoFoop_Exercicio_SOLID1.BetterCode.Constants;
-using cursoFoop_Exercicio_SOLID1.BetterCode.Domain;
-using System;
+﻿using ExerciseI.Refactored.Constants;
+using ExerciseI.Refactored.Domain;
+using ExerciseI.SmellCode;
 
-namespace cursoFoop_Exercicio_SOLID1
+namespace Solid_Exercices
 {
     class Program
     {
         static void Main(string[] args)
         {
             var cliente = LocalizaCliente.ProcuraPorNome("Pedro");
-            Console.WriteLine(cliente?.Nome ?? "Não localizado");
-            Console.ReadLine();
+            Console.WriteLine($"Smell code: {cliente?.Nome ?? "Não localizado"}");
 
             var filter = new FilterApplier(SearchTypes.FindByName);
             var result = filter.Find("Maria");
-            Console.WriteLine($"Refatorado Top: {result?.Name ?? "Não Localizado"}");
+            Console.WriteLine($"Refatorado: {result?.Name ?? "Não Localizado"}");
 
             var result2 = filter.Find("Brasil", SearchTypes.FindByCountry);
-            Console.WriteLine($"Refatorado Top: {result2?.Name ?? "Não Localizado"}");
+            Console.WriteLine($"Refatorado: {result2?.Name ?? "Não Localizado"}");
         }
     }
 }

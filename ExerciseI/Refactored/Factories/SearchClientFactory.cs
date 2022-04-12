@@ -1,9 +1,8 @@
-﻿using cursoFoop_Exercicio_SOLID1.BetterCode.Constants;
-using cursoFoop_Exercicio_SOLID1.BetterCode.Filters;
-using cursoFoop_Exercicio_SOLID1.BetterCode.Interfaces;
-using System;
+﻿using ExerciseI.Refactored.Constants;
+using ExerciseI.Refactored.Filters;
+using ExerciseI.Refactored.Interfaces;
 
-namespace cursoFoop_Exercicio_SOLID1.BetterCode.Factories
+namespace ExerciseI.Refactored.Factories
 {
     internal class SearchClientFactory : ISearchClientFactory
     {

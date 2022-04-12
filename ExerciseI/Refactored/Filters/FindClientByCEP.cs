@@ -1,7 +1,7 @@
-﻿using cursoFoop_Exercicio_SOLID1.BetterCode.Interfaces;
-using cursoFoop_Exercicio_SOLID1.BetterCode.Models;
+﻿using ExerciseI.Refactored.Interfaces;
+using ExerciseI.Refactored.Models;
 
-namespace cursoFoop_Exercicio_SOLID1.BetterCode.Filters
+namespace ExerciseI.Refactored.Filters
 {
     internal class FindClientByCountry : IFindClient
     {

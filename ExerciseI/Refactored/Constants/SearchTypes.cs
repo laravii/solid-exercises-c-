@@ -1,4 +1,4 @@
-﻿namespace cursoFoop_Exercicio_SOLID1.BetterCode.Constants
+﻿namespace ExerciseI.Refactored.Constants
 {
     public static class SearchTypes
     {

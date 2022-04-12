@@ -1,7 +1,4 @@
-﻿using cursoFoop_Exercicio_SOLID1.BetterCode.Models;
-using System.Collections.Generic;
-
-namespace cursoFoop_Exercicio_SOLID1.BetterCode.Models
+﻿namespace ExerciseI.Refactored.Models
 {
     public class Clients
     {

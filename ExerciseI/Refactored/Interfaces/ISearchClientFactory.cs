@@ -1,4 +1,4 @@
-﻿namespace cursoFoop_Exercicio_SOLID1.BetterCode.Interfaces
+﻿namespace ExerciseI.Refactored.Interfaces
 {
     public interface ISearchClientFactory
     {

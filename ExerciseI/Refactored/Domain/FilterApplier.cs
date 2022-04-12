@@ -1,8 +1,8 @@
-﻿using cursoFoop_Exercicio_SOLID1.BetterCode.Factories;
-using cursoFoop_Exercicio_SOLID1.BetterCode.Interfaces;
-using cursoFoop_Exercicio_SOLID1.BetterCode.Models;
+﻿using ExerciseI.Refactored.Factories;
+using ExerciseI.Refactored.Interfaces;
+using ExerciseI.Refactored.Models;
 
-namespace cursoFoop_Exercicio_SOLID1.BetterCode.Domain
+namespace ExerciseI.Refactored.Domain
 {
     public class FilterApplier
     {
