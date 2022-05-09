@@ -15,7 +15,7 @@ namespace ExerciseII.Refactored.Domain
             {
                 // code to new order
                 _registerFactory.GetRegister("logger", $"Logger: Pedido Incluido em :  {DateTime.Now}");
-                _registerFactory.GetRegister("txt", $"Documento: Pedido gravado com sucesso em :  {DateTime.Now}!");
+                _registerFactory.GetRegister("txt", $"Documento: Pedido gravado com sucesso em :  {DateTime.Now}!", "{path route}"); ;
             }
             catch (Exception ex)
             {
