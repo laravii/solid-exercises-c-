@@ -7,13 +7,10 @@ namespace ExerciseI.Refactored.Domain
     public class FilterApplier
     {
         private IFindClient _searchType;
+
         public FilterApplier(string searchType)
         {
             _searchType = GetSearchType(searchType);
-        }
-        private IFindClient GetSearchType(string searchType)
-        {
-            return new SearchClientFactory(searchType).FindClientFactory();
         }
         public Client Find(string keyword)
         {
@@ -25,5 +22,11 @@ namespace ExerciseI.Refactored.Domain
             _searchType = GetSearchType(searchType);
             return Find(keyword);
         }
+
+        private IFindClient GetSearchType(string searchType)
+        {
+            return new SearchClientFactory(searchType).FindClientFactory();
+        }
+
     }
 }
