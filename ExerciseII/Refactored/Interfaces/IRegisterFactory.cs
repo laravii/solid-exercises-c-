@@ -2,7 +2,7 @@
 {
     public interface IRegisterFactory
     {
-        public void GetRegister(string type, string message);
+        public void GetRegister(string type, string message, string path = "");
 
     }
 }
