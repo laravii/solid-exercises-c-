@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid_Exercises", "cursoFoo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseI", "ExerciseI\ExerciseI.csproj", "{741593EE-A0F6-4980-9946-D036FA8A6DCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseII", "ExerciseII\ExerciseII.csproj", "{7F61B81A-FC4E-4BBF-AD75-EEF307F87A16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseII", "ExerciseII\ExerciseII.csproj", "{7F61B81A-FC4E-4BBF-AD75-EEF307F87A16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseIII", "ExerciseIII\ExerciseIII.csproj", "{C5D6DF8E-C903-44D8-BA4E-5EA62ADA1237}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseIII", "ExerciseIII\ExerciseIII.csproj", "{C5D6DF8E-C903-44D8-BA4E-5EA62ADA1237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseIV", "ExerciseIV\ExerciseIV.csproj", "{8963AE6F-6614-474F-AA10-275384134612}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C5D6DF8E-C903-44D8-BA4E-5EA62ADA1237}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5D6DF8E-C903-44D8-BA4E-5EA62ADA1237}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5D6DF8E-C903-44D8-BA4E-5EA62ADA1237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8963AE6F-6614-474F-AA10-275384134612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8963AE6F-6614-474F-AA10-275384134612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8963AE6F-6614-474F-AA10-275384134612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8963AE6F-6614-474F-AA10-275384134612}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

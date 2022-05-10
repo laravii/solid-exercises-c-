@@ -4,8 +4,8 @@ namespace ExerciseIII.Refactored.Domain
 {
     public class TotalTaxCalculater
     {
-        private ITaxFactory _taxFactory;
-        private IBaseTaxCalculate _baseTaxCalculate;
+        private readonly ITaxFactory _taxFactory;
+        private readonly IBaseTaxCalculate _baseTaxCalculate;
         public TotalTaxCalculater(ITaxFactory taxFactory, IBaseTaxCalculate baseTaxCalculate)
         {
             _taxFactory = taxFactory;
