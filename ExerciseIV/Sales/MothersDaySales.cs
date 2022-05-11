@@ -4,9 +4,16 @@ namespace ExerciseIV.Sales
 {
     internal class MothersDaySales : ISale
     {
-        public decimal SalePrice(decimal grossPrice)
+        public decimal GrossPrice { get; set; }
+
+        public MothersDaySales(decimal grossPrice)
         {
-            return grossPrice - (grossPrice * 50 / 100);
+            GrossPrice = grossPrice;
+        }
+
+        public decimal SalePrice()
+        {
+            return GrossPrice - (GrossPrice * 50 / 100);
         }
     }
 }

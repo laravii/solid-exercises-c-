@@ -8,6 +8,9 @@ using ExerciseIII.Refactored.Calculators;
 using ExerciseIII.Refactored.Constants;
 using ExerciseIII.Refactored.Domain;
 using ExerciseIII.Refactored.Factories;
+using ExerciseIV.Constants;
+using ExerciseIV.Domain;
+using ExerciseIV.Models;
 
 namespace Solid_Exercices
 {
@@ -15,7 +18,28 @@ namespace Solid_Exercices
     {
         static void Main(string[] args)
         {
-            ExerciseIII();
+            ExerciseIV();
+
+        }
+
+        private static void ExerciseIV()
+        {
+            Product smartPhone = new Product("celular", "celular de ultima geração", 1125.65m);
+            Product parfum = new Product("perfume", "floral amadeirado", 125.00m);
+
+            var discounntApplier = new DiscountApplier(SalesType.MothersDaySales, smartPhone.Price);
+
+            Console.WriteLine($"O valor do {smartPhone.Name} em promoção de dias das Mães é " +
+                $"R${discounntApplier.FinalPrice().ToString("N2")}");
+
+            Console.WriteLine($"O valor do {smartPhone.Name} em promoção de dias dos Namorados é " +
+                $"R${discounntApplier.Find(SalesType.ValentineDaySales).ToString("N2")}");
+
+            Console.WriteLine($"O valor do {parfum.Name} em promoção de dias das Mães é " +
+                $"R${discounntApplier.Find(SalesType.MothersDaySales, parfum.Price).ToString("N2")}");
+
+            Console.WriteLine($"O valor do {parfum.Name} em promoção de dias das Mães é " +
+                $"R${discounntApplier.Find(SalesType.ValentineDaySales, parfum.Price).ToString("N2")}");
         }
 
         private static void ExerciseIII()

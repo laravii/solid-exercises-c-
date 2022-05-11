@@ -1,6 +1,6 @@
 ﻿namespace ExerciseIV.Models
 {
-    internal class Product
+    public class Product
     {
         public readonly Guid Id = Guid.NewGuid();
 

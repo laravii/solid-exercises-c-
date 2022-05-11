@@ -10,6 +10,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\ExerciseIII\ExerciseIII.csproj" />
 	  <ProjectReference Include="..\ExerciseII\ExerciseII.csproj" />
+	  <ProjectReference Include="..\ExerciseIV\ExerciseIV.csproj" />
 	  <ProjectReference Include="..\ExerciseI\ExerciseI.csproj" />
 	</ItemGroup>
 

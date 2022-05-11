@@ -2,6 +2,7 @@
 {
     public interface ISale
     {
-        decimal SalePrice(decimal grossPrice);
+        decimal GrossPrice { get; set; }
+        decimal SalePrice();
     }
 }
