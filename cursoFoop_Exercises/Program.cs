@@ -11,6 +11,8 @@ using ExerciseIII.Refactored.Factories;
 using ExerciseIV.Constants;
 using ExerciseIV.Domain;
 using ExerciseIV.Models;
+using ExerciseV.Refactored.Constants;
+using ExerciseV.Refactored.Domain;
 
 namespace Solid_Exercices
 {
@@ -18,8 +20,20 @@ namespace Solid_Exercices
     {
         static void Main(string[] args)
         {
+            ExerciseI();
+            ExerciseII();
+            ExerciseIII();
             ExerciseIV();
+            ExerciseV();
+        }
 
+        private static void ExerciseV()
+        {
+            var pizzaria = new Pizzaria();
+            pizzaria.NewPizza(PizzaFlavors.Calabresa);
+            pizzaria.NewPizza(PizzaFlavors.Mussarela);
+            pizzaria.NewPizza(PizzaFlavors.Chocolate);
+            pizzaria.NewPizza("Banana com chocolate");
         }
 
         private static void ExerciseIV()
@@ -50,7 +64,7 @@ namespace Solid_Exercices
             Console.WriteLine($"O imposto que alguem do {Countries.Brazil} deve pagar é de R${brazilTax.ToString("N2")}");
         }
 
-        private static void ExerciceII()
+        private static void ExerciseII()
         {
             var smellCode = new Pedido();
             smellCode.AdicionarPedido();
